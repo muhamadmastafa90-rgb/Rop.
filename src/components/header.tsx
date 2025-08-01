@@ -5,8 +5,8 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/s
 
 export function Header() {
   const navLinks = [
-    { href: '#features', label: 'Features' },
-    { href: '#updates', label: 'Updates' },
+    { href: '/#features', label: 'Features' },
+    { href: '/#updates', label: 'Updates' },
     { href: '/docs', label: 'Documentation' },
     { href: '/admin', label: 'Admin Panel' },
   ];
