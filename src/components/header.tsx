@@ -7,7 +7,7 @@ export function Header() {
   const navLinks = [
     { href: '#features', label: 'Features' },
     { href: '#updates', label: 'Updates' },
-    { href: '#', label: 'Documentation' },
+    { href: '/docs', label: 'Documentation' },
     { href: '/admin', label: 'Admin Panel' },
   ];
 
