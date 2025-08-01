@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Bot, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 export function Header() {
   const navLinks = [
@@ -44,6 +44,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-card">
+              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
               <Link href="/" className="mr-6 flex items-center space-x-2 mb-8">
                 <Bot className="h-6 w-6 text-primary" />
                 <span className="font-bold">Discord Bot Central</span>
