@@ -1,5 +1,9 @@
+
+'use client';
+
 import { type ReactNode } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   SidebarProvider,
   Sidebar,
@@ -12,12 +16,22 @@ import {
   SidebarTrigger,
   SidebarInset,
 } from '@/components/ui/sidebar';
-import { Bot, Home, Settings, Users, LogOut } from 'lucide-react';
+import { Bot, Home, Settings, Users, Server, LogOut } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: '/admin', label: 'Dashboard', icon: <Home /> },
+    { href: '/admin/configuration', label: 'Configuration', icon: <Settings /> },
+    { href: '/admin/servers', label: 'Servers', icon: <Server /> },
+    { href: '/admin/users', label: 'Users', icon: <Users /> },
+  ];
+
   return (
     <SidebarProvider>
       <Sidebar>
@@ -29,21 +43,13 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
         </SidebarHeader>
         <SidebarContent>
           <SidebarMenu>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild isActive>
-                <Link href="/admin"><Home />Dashboard</Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild>
-                <Link href="#"><Settings />Configuration</Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild>
-                <Link href="#"><Users />Servers & Users</Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
+            {navLinks.map((link) => (
+                <SidebarMenuItem key={link.href}>
+                    <SidebarMenuButton asChild isActive={pathname === link.href}>
+                        <Link href={link.href}>{link.icon}{link.label}</Link>
+                    </SidebarMenuButton>
+                </SidebarMenuItem>
+            ))}
           </SidebarMenu>
         </SidebarContent>
         <Separator className="my-1" />
