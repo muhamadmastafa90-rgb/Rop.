@@ -8,7 +8,6 @@ export function Header() {
     { href: '/#features', label: 'Features' },
     { href: '/#updates', label: 'Updates' },
     { href: '/docs', label: 'Documentation' },
-    { href: '/admin', label: 'Admin Panel' },
   ];
 
   return (
