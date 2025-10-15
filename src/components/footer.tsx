@@ -8,10 +8,10 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center space-x-2">
             <Bot className="h-6 w-6 text-primary" />
-            <span className="font-bold text-lg">Discord Bot Central</span>
+            <span className="font-bold text-lg">GoJo Beats </span>
           </div>
           <div className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Discord Bot Central. All rights reserved.
+            © {new Date().getFullYear()} GoJo Beats Powered By GoJo | Robot . All rights reserved.
           </div>
           <div className="flex items-center space-x-4">
             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
