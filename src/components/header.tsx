@@ -16,7 +16,7 @@ export function Header() {
         <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Bot className="h-6 w-6 text-primary" />
-            <span className="font-bold">Discord Bot Central</span>
+            <span className="font-bold">GoJo Beats </span>
           </Link>
           <nav className="hidden gap-6 text-sm md:flex">
             {navLinks.map((link) => (
@@ -33,7 +33,7 @@ export function Header() {
         
         <div className="flex flex-1 items-center justify-end space-x-2">
           <Button asChild className="hidden md:flex">
-            <Link href="#">Invite the Bot</Link>
+            <Link href="https://discord.com/oauth2/authorize?client_id=1150754451938869371">Invite the Bot</Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -46,7 +46,7 @@ export function Header() {
               <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
               <Link href="/" className="mr-6 flex items-center space-x-2 mb-8">
                 <Bot className="h-6 w-6 text-primary" />
-                <span className="font-bold">Discord Bot Central</span>
+                <span className="font-bold">GoJo Beats</span>
               </Link>
               <nav className="flex flex-col gap-4">
                 {navLinks.map((link) => (
@@ -60,7 +60,7 @@ export function Header() {
                 ))}
               </nav>
               <Button asChild className="mt-8 w-full">
-                <Link href="#">Invite the Bot</Link>
+                <Link href="https://discord.com/oauth2/authorize?client_id=1150754451938869371">Invite the Bot</Link>
               </Button>
             </SheetContent>
           </Sheet>
