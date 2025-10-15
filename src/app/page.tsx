@@ -54,19 +54,19 @@ const AnimatedSection = ({ children, className }: { children: ReactNode; classNa
 
 const features = [
   {
-    icon: <ShieldCheck className="w-8 h-8 text-primary" />,
-    title: 'Advanced Moderation',
-    description: 'Keep your server safe with powerful, easy-to-use moderation tools.',
+    icon: <Settings className="w-8 h-8 text-primary" />,
+    title: 'Setting Command',
+    description: 'Configure your server with commands like prefix, autoplay, 247, and request to tailor GoJo Beats to your needs.',
   },
   {
-    icon: <Zap className="w-8 h-8 text-primary" />,
-    title: 'Custom Commands',
-    description: "Create custom commands to tailor the bot to your community's needs.",
+    icon: <Music className="w-8 h-8 text-primary" />,
+    title: 'Sound Quality',
+    description: "Enjoy high-quality music playback from all supported sources, with customizable volume and filters for the perfect sound experience.",
   },
   {
-    icon: <Code className="w-8 h-8 text-primary" />,
-    title: 'Extensive API',
-    description: 'Integrate with your own services using our developer-friendly API.',
+    icon: <Zep className="w-8 h-8 text-primary" />,
+    title: 'Sources',
+    description: 'Play music from supported platforms including YouTube, SoundCloud, Spotify, Deezer, and Apple Music.',
   },
 ];
 
