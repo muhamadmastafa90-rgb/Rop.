@@ -54,7 +54,7 @@ const AnimatedSection = ({ children, className }: { children: ReactNode; classNa
 
 const features = [
   {
-    icon: <Setting className="w-8 h-8 text-primary" />,
+    icon: <ShieldCheck className="w-8 h-8 text-primary" />,
     title: 'Setting Command',
     description: 'Configure your server with commands like prefix, autoplay, 247, and request to tailor GoJo Beats to your needs.',
   },
