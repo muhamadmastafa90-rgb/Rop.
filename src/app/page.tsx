@@ -69,11 +69,22 @@ const features = [
     description: 'Play music from supported platforms including YouTube, SoundCloud, Spotify, Deezer, and Apple Music.',
   },
 ];
-
 const updates = [
-    { version: 'v2.5.0', date: '2024-07-15', description: 'Added AI-powered response generation and image recognition.' },
-    { version: 'v2.4.1', date: '2024-06-28', description: 'Performance improvements and bug fixes for the music module.' },
-    { version: 'v2.4.0', date: '2024-06-10', description: 'New economy system with leaderboards and store items.' },
+  { 
+    version: 'v2.5.0', 
+    date: '2025-10-01', 
+    description: 'Added advanced playlist management and new music filters for a better listening experience.' 
+  },
+  { 
+    version: 'v2.4.1', 
+    date: '2025-09-15', 
+    description: 'Performance improvements and bug fixes for music playback and queue handling.' 
+  },
+  { 
+    version: 'v2.4.0', 
+    date: '2025-09-01', 
+    description: 'Introduced Sound Quality settings and support for multiple music sources (YouTube, Spotify, SoundCloud, Deezer, Apple Music).' 
+  },
 ];
 
 export default function Home() {
@@ -89,17 +100,17 @@ export default function Home() {
                 The Only Discord Bot You'll Ever Need
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground mt-4 max-w-2xl mx-auto">
-                Powerful moderation, engaging features, and endless customization. Elevate your server today.
+              Powerful music control, advanced moderation, and endless customization. Take your server to the next level with GoJo Beats.
               </p>
               <div className="mt-8 flex justify-center gap-4">
                 <Button size="lg" asChild>
-                  <Link href="#">
+                  <Link href="https://discord.com/oauth2/authorize?client_id=1150754451938869371">
                     Invite the Bot <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <Link href="#">
-                    Read Docs
+                  <Link href="https://discord.gg/uqNcue9GAn">
+                    Support Server
                   </Link>
                 </Button>
               </div>
