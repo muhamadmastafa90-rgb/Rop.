@@ -59,12 +59,12 @@ const features = [
     description: 'Configure your server with commands like prefix, autoplay, 247, and request to tailor GoJo Beats to your needs.',
   },
   {
-    icon: <Music className="w-8 h-8 text-primary" />,
+    icon: <Zep className="w-8 h-8 text-primary" />,
     title: 'Sound Quality',
     description: "Enjoy high-quality music playback from all supported sources, with customizable volume and filters for the perfect sound experience.",
   },
   {
-    icon: <Zep className="w-8 h-8 text-primary" />,
+    icon: <Code className="w-8 h-8 text-primary" />,
     title: 'Sources',
     description: 'Play music from supported platforms including YouTube, SoundCloud, Spotify, Deezer, and Apple Music.',
   },
