@@ -59,7 +59,7 @@ const features = [
     description: 'Configure your server with commands like prefix, autoplay, 247, and request to tailor GoJo Beats to your needs.',
   },
   {
-    icon: <Zep className="w-8 h-8 text-primary" />,
+    icon: <Zap className="w-8 h-8 text-primary" />,
     title: 'Sound Quality',
     description: "Enjoy high-quality music playback from all supported sources, with customizable volume and filters for the perfect sound experience.",
   },
